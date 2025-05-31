@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    scroll-behavior:smooth ;
+}
+body{
+    background-color:rgba(197, 139, 62, 0.671);
+    background-image:url("golden-retriever-rock-152894720-2000-52f034f0eb264e11ba2a00adbb26909b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1px);
+    margin:0%;
+    animation:bgblur 5s;
+}
+.navbar ul{
+    background-color: rgb(46, 129, 129);
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding:10px,10px,10px,10px;
+    margin:10px,20px,20px,20px;
+
+}
+h1{
+    color:rgb(7, 6, 7);
+    background-color: rgba(0, 0, 0, 0.281);
+    animation:Color 2s;
+}
+h2{
+    color:rgba(238, 10, 21, 0.76)
+}
+h5{
+    color:rgb(14, 11, 11);
+}
+.navbar{
+    width:100%;
+    display:flex;
+    position:sticky;
+    padding:10px,10px,10px,10px;
+    margin:10px,20px,20px,20px;
+    top:0;
+    animation:Color 2s;
+
+}
+
+.navbar li{
+    cursor:pointer;
+    font-family:'Times New Roman', Times, serif;
+    list-style-type:none;
+    padding:10px,10px,10px,10px;
+    margin:10px,20px,20px,20px;
+}
+.navbar li:hover{
+    transform:translateY(-1px);
+    transition:.1s ease;
+    color:brown
+}
+img:hover{
+    transform:scale(90%);
+    transition:1s ease;
+}
+form{
+    border:solid 2px black;
+    border:dashed 2px black;
+    background-color:rgba(77, 126, 96, 0.219);
+    width:400px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+button{
+    margin-top:10px;
+    width:100px;
+    height:35px;
+    font-size:25px;
+    background-color:rgb(64, 77, 131);
+    border-radius:20px;
+    border:solid black 2px;
+    color:aliceblue
+
+}
+button {
+ background-color: #eee;
+ border: none;
+ padding: 1rem;
+ font-size: 1rem;
+ width: 10em;
+ border-radius: 1rem;
+ color: lightcoral;
+ box-shadow: 0 0.4rem #dfd9d9;
+ cursor: pointer;
+}
+
+button:active {
+ color: white;
+ box-shadow: 0 0.2rem #dfd9d9;
+ transform: translateY(0.2rem);
+}
+
+button:hover:not(:disabled) {
+ background: lightcoral;
+ color: white;
+ text-shadow: 0 0.1rem #bcb4b4;
+}
+
+button:disabled {
+ cursor: auto;
+ color: grey;
+}
+.home{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    height:100vh;/*viewport height*/
+
+ }
+.about-me{
+
+background-color: hsla(161, 12%, 27%, 0.596);
+}
+details{
+    font-size: 15px;
+    background-color: rgba(184, 199, 199, 0.356);
+}
+summary{
+    font-size: 25px;
+}
+.details1{
+    background-color: rgba(245, 245, 220, 0.459);
+}
+.details2{
+    background-color: rgba(134, 134, 97, 0.342);
+}
+.contact{
+    height:150px;
+    background-color: rgba(250, 235, 215, 0.301);
+}
+@keyframes Color{
+    0%{
+        background-color:aliceblue;
+        transform:translateY(20px);
+
+    }
+    100%{
+           color:red;
+           transform: translateY(0px);
+    }
+}
+@keyframes bgblur{
+    0%{
+       backdrop-filter: blur(100px);
+    }
+    100%{
+        backdrop-filter:blur(10px);
+    }
+}
+   
